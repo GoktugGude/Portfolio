@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    overflow-x: hidden;
+    overflow-wrap: anywhere;
+}
+
+.navbar{
+    position: fixed;
+    background-color: #252929;
+    width: 100%;
+    min-width: 0;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+
+
+}
+
+.logo img{
+    height: 8vh;
+}
+
+.titles{
+    display: flex;
+    gap: 2vw;
+}
+.titles a{
+    color: white;
+}
+.titles a:hover{
+    color: orangered;
+}
+
+.titles > a:first-child{
+    color: orangered;
+}
+
+.titles > a:first-child:hover{
+    color: white;
+}
+
+.home{
+    display: flex;
+    width: 100%;
+    height: 120vh;
+      overflow: hidden;
+
+
+}
+.left{
+    min-width: 0;
+    flex: 1;
+    background-color: #697777;
+    width: 30%;
+    transition: flex 0.3s;
+}
+
+
+.right{
+    width: 70%;
+    flex-shrink: 0;
+    flex: 0 0 60%; 
+    transition: flex 0.3s;
+
+}
+
+@media (max-width: 840px) {
+.right{
+    width: 70%;
+    flex-shrink: 0;
+    flex: 0 0 100%; 
+    transition: flex 0.3s;
+
+}
+}
+
+.right img{
+    width: auto;       /* gerçek boyutu kullan */
+  max-width: 100%;   /* divi aşmasın */
+  height: auto;
+  object-fit: cover; /* merkez korunur */
+    height: 120vh;
+    top: 0;
+    z-index: -1;
+    position: fixed;
+}
+
+.name{
+    display: block;
+    color: white;
+    margin-top: 40%;
+    margin-left: 20%;
+
+
+}
+.name h1{
+    font-weight: 900;
+    font-size: 65px;
+    z-index: 1;
+    min-width: 0;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 8px;
+}
+.name h3{
+    margin-left: 40%;
+font-family: cursive;
+    margin-top: 15%;
+    font-size: 35px;
+}
+
+.special{
+    color: orangered;
+    font-size: 75px;
+}
+
+.me{
+    width: 45%;
+    min-width: 550px;
+    height: 70%;
+    background-color: #252929;
+    opacity: 0.8; /* 0 = tamamen şeffaf, 1 = tamamen opak */
+    color: white;
+    text-align: center;
+       position: absolute; /* body’ye göre */
+    top: 85vh;          /* body’nin üstünden mesafe */
+    left: 50%;          /* yatay ortalama */
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+.me .logo{
+}
+
+.me .logo img{
+    width: 150px;
+    height: 150px;
+}
+
+.me h2{
+    margin-top: 50px;
+    line-height: 1.6;
+    padding: 0 40px;
+}
+
+.arkaplan{
+    height: 140vh;
+     background-image: url(PIXNIO-1743445-5307x3538.jpg); /* arka plan resmi */
+    background-size: cover;             /* divi kaplasın */
+}
+
+.yetenekler{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.bar{
+    height: 10px;
+    background-color: green;
+    border-radius: 10px;
+    justify-content: left;
+}
+
+.html,.csharp,.sql,.javascript,.net{
+    display: flex;
+    width: 100%;
+    margin-left: 60%;
+}
+
+.html-bar{
+    width: 20%;
+
+
+}
+.javascript-bar{
+    width: 25%;
+    background-color: orangered;
+
+}
+.csharp-bar{
+    width: 30%;
+
+}
+.net-bar{
+    width: 20%;
+    background-color: orangered;
+
+}
+.sql-bar{
+    width: 32%;
+
+}
+.konu{
+    font-weight: bold;
+    width: 150px;
+}
+
+@media (max-width: 840px) {
+.html,.csharp,.sql,.javascript,.net{
+    margin-left: 40%;
+}
+}
