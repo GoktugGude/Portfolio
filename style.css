@@ -133,8 +133,6 @@ font-family: cursive;
     transform: translateX(-50%);
     border-radius: 10px;
 }
-.me .logo{
-}
 
 .me .logo img{
     width: 150px;
@@ -313,7 +311,7 @@ font-family: cursive;
 }
 
 .footer-text{
-    
+
        color: white;
   font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
