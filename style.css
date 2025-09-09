@@ -16,6 +16,8 @@
     align-items: center;
     justify-content: space-around;
     z-index: 10;
+    overflow-y: hidden;
+
 
 
 }
@@ -146,32 +148,37 @@ font-family: cursive;
 }
 
 .arkaplan{
-    height: 140vh;
+    height: 120vh;
      background-image: url(PIXNIO-1743445-5307x3538.jpg); /* arka plan resmi */
-    background-size: cover;             /* divi kaplasın */
+    background-size: cover; 
+    background-attachment: fixed;
+                /* divi kaplasın */
 }
 
 .yetenekler{
     display: flex;
     width: 100%;
+    height: 30%;
     align-items: center;
-    height: 100%;
     justify-content: center;
     flex-direction: column;
     gap: 40px;
 }
 
 .bar{
-    height: 10px;
+    height: 15px;
     background-color: green;
-    border-radius: 10px;
+    border-radius: 0 10px 10px 0;
     justify-content: left;
+    
 }
 
 .html,.csharp,.sql,.javascript,.net{
     display: flex;
     width: 100%;
     margin-left: 60%;
+    gap: 15px;
+    align-items: center;
 }
 
 .html-bar{
@@ -182,6 +189,8 @@ font-family: cursive;
 .javascript-bar{
     width: 25%;
     background-color: orangered;
+      color: #ff6a00;
+
 
 }
 .csharp-bar{
@@ -200,8 +209,115 @@ font-family: cursive;
 .konu{
     font-weight: bold;
     width: 150px;
+  color: #333; /* Nötr koyu renk */
 }
 
+.yuzde p{
+    color: 333;
+}
+
+.experience-text{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    align-items: end;
+    color: whitesmoke;
+    font-size: 35px;
+      font-family: "Poppins", sans-serif; /* Modern bir yazı tipi */
+  font-size: 2rem; /* Orta-boy başlık */
+  font-weight: 600; /* Yarı kalın */
+  letter-spacing: 1px; /* Harfler arasında hafif boşluk */
+  text-transform: uppercase; /* Tamamen büyük harf (isteğe bağlı) */
+  margin-bottom: 1rem; /* Aşağıya nefes alanı bırak */
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.45); /* Yumuşak gölge */
+    
+}
+
+.portfolio-div{
+    display: block;
+    background-color: #333;
+    height: 90vh;
+
+}
+
+.portfolio{
+    height: 60vh;
+    margin-top: 10vh;
+    overflow-y: hidden;
+
+}
+.portfolio-text{
+    font-size: 36px;
+    color: white;
+    display: flex;
+    gap: 50px;
+    justify-self: center;
+    padding-bottom: 50px;
+}
+.portfolio-link h2{
+    color: wheat;
+    font-weight: 250;
+}
+
+.portfolio-grid{
+    display: grid;
+    height: 86%;
+    width: 100%;
+    grid-template-columns: 326px 326px 326px; /* 3 sütun, hepsi eşit genişlikte */
+    align-items: center;
+    justify-content: center;
+}
+.proje{
+    display: flex;
+    width: 326px;
+    height: 326px;
+    background-color: white;
+    justify-content: center;
+
+}
+.blue{
+    background-color: blue;
+}
+.darkblue{
+    background-color: darkblue;
+}
+
+.lightblue{
+    background-color: lightblue;
+}
+
+.proje-text{
+    align-self: end;
+    padding-bottom: 20%;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+}
+
+.footer{
+    width: 100%;
+    height: 100px;
+    background-color: #252929;
+}
+.footer-div{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.footer-div .logo img{
+    height: 100px;
+    width: 100px;
+   
+}
+
+.footer-text{
+    
+       color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
 @media (max-width: 840px) {
 .html,.csharp,.sql,.javascript,.net{
     margin-left: 40%;
